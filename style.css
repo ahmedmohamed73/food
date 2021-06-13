@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: poppins,sans-serif;
+scroll-behavior: smooth;
+}
+p{
+
+font-weight: 300;
+color: #111;
+
+}
+.banner{
+
+position: relative;
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url(bg.jpg);
+background-size: cover;
+
+}
+.banner .content 
+{
+
+max-width: 900px;
+text-align: center;
+
+
+}
+.banner .content h2
+{
+
+font-size: 5em;
+color: #fff;
+}
+.banner .content p
+{
+
+font-size: 1em;
+color: #fff;
+
+}
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding:20px 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    border:.5px solid #fff;
+    border-radius: 1.5em;
+    outline: none;
+}
+.btn:hover
+{
+letter-spacing: 6px;
+
+}
+header
+{
+position: fixed;
+top: 0;
+left:  0;
+width: 100%;
+padding: 40px 100px;
+z-index: 10000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.5s;
+}
+header .logo
+{
+color: #fff;
+font-weight: 700;
+font-size: 2em;
+text-decoration: none;
+
+}
+header .logo span
+{
+
+color: #ff0158;
+
+}
+header .navigation
+{
+
+position: relative;
+display: flex;
+
+}
+header .navigation li
+{
+
+list-style: none;
+margin-left: 30px;
+}
+header .navigation li a 
+{
+
+text-decoration: none;
+color: #fff;
+font-weight: 300;
+
+}
+header .navigation li a:hover{
+color: #ff0157;
+
+}
+section
+{
+padding: 100px;
+
+}
+.row{
+
+position:relative;
+width:100%;
+display: flex;
+justify-content: space-between;
+
+}
+.row .col50
+{
+position: relative;
+width:48%;
+}
+@media ( max-width:991px)
+{
+header
+{
+padding:10px 20px;
+
+}
+section
+{
+padding:20px; 
+
+}
+.banner .content h2
+{
+
+    font-size: 3em;
+    color: #fff;
+}
+ }
